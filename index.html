@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทอยลูกเต๋า</title>
+    <style>
+    body{
+        background-color: orange;
+    }
+        .img {
+    text-align: center;
+    }
+    .Button{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        font-size: 100px;
+    }
+    </style>
+</head>
+<body>
+        <div class="img">
+            <h1>Random Integer</h1>
+        </div>
+        <br></br>
+        <div class="RT" align="center">
+        <img class="img" src='1.png'>
+        <img class="img" src='1.png'>
+        <img class="img" src='1.png'>
+    </div>
+        <div class="Button">
+        <button onclick="DEE()">ทอยลูกเต๋าได้เลย</button>
+        </div>
+      <script>
+        let RT = document.getElementsByClassName('img');
+        function DEE() {
+            for(let i=0;i<RT.length;i++){
+                let AT = (Math.random()*5)+1;
+                
+                RT[i].src = parseInt(AT) + '.png';
+                console.log(parseInt(AT) + '.png');
+            }
+        }
+      </script>
+      
+</body>
+</html>
